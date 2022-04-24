@@ -1,1 +1,1 @@
-# example-react-project
+# Example react project
