@@ -3,16 +3,20 @@
 import React from 'react';
 
 import { Layout } from '@dwreact/core-layout';
-import { Board } from '@dwreact/product-board';
+import { Issue } from '@dwreact/product-issue';
 import { Sidebar } from '@dwreact/product-sidebar';
 import { TopBar } from '@dwreact/product-topbar';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-const HomePage = () => {
+const IssuePage = () => {
+  const router = useRouter();
+  const { id } = router.query;
+
   return (
     <>
       <Head>
-        <title>Example react project in a monorepo</title>
+        <title>Issue page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
@@ -22,9 +26,9 @@ const HomePage = () => {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
 
-      <Layout topBar={<TopBar />} sidebar={<Sidebar />} page={<Board />} />
+      <Layout topBar={<TopBar />} sidebar={<Sidebar />} page={id && typeof id === 'string' ? <Issue id={id} /> : null} />
     </>
   );
 };
 
-export default HomePage;
+export default IssuePage;
