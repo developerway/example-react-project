@@ -1,11 +1,12 @@
 /** @jsxImportSource @emotion/react */
 
+import { gray50 } from '@dwreact/core-styles';
 import { css } from '@emotion/react';
 
 export const boardPickerCss = css`
   padding: 10px;
   margin: 0;
-  background: #f4f5f7;
+  background: ${gray50};
   border: 0;
   border-radius: 2px;
   cursor: pointer;
@@ -14,7 +15,7 @@ export const boardPickerCss = css`
 `;
 
 export const sectionMenuCss = css`
-  background: #f4f5f7;
+  background: ${gray50};
   padding: 0;
   margin: 5px 0;
   list-style-type: none;

@@ -5,35 +5,35 @@ import { CollapsableSection } from '../shared/collapsable-section';
 
 import { sectionMenuCss, boardPickerCss } from './styles';
 
-export const SidebarPlanningSection = () => {
+export const PlanningSection = () => {
   return (
     <CollapsableSection title="planning">
       <button css={boardPickerCss}>ELS board</button>
 
       <ul css={sectionMenuCss}>
         <li>
-          <a href="packages/product/sidebar/planning-section/planning-section#index.tsx">Roadmap</a>
+          <a href="#">Roadmap</a>
         </li>
         <li>
-          <a href="packages/product/sidebar/planning-section/planning-section#index.tsx">Backlog</a>
+          <a href="#">Backlog</a>
         </li>
         <li>
-          <a href="packages/product/sidebar/planning-section/planning-section#index.tsx">Kanban board</a>
+          <a href="#">Kanban board</a>
         </li>
         <li>
-          <a href="packages/product/sidebar/planning-section/planning-section#index.tsx">Reports</a>
+          <a href="#">Reports</a>
         </li>
         <li>
-          <a href="packages/product/sidebar/planning-section/planning-section#index.tsx">Roadmap</a>
+          <a href="#">Roadmap</a>
         </li>
       </ul>
 
       <ul css={sectionMenuCss}>
         <li>
-          <a href="packages/product/sidebar/planning-section/planning-section#index.tsx">Issues</a>
+          <a href="#">Issues</a>
         </li>
         <li>
-          <a href="packages/product/sidebar/planning-section/planning-section#index.tsx">Components</a>
+          <a href="#">Components</a>
         </li>
       </ul>
     </CollapsableSection>
