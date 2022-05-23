@@ -1,9 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
 
-import { useDevelopmentLinks } from '../../data/development-links';
-import { CollapsableSection } from '../../shared/collapsable-section';
-import { SectionMenu } from '../../shared/section-menu';
+import { useDevelopmentLinks } from '../../data';
+import { CollapsableSection, SectionMenu } from '../../shared';
 
 export const DevelopmentSection = () => {
   const developmentLinks = useDevelopmentLinks();

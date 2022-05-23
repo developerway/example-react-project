@@ -1,8 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
 
-import { CollapsableSection } from '../../shared/collapsable-section';
-import { SectionMenu } from '../../shared/section-menu';
+import { CollapsableSection, SectionMenu } from '../../shared';
 
 import { boardPickerCss } from './styles';
 
